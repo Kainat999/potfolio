@@ -1,0 +1,1 @@
+print("mail sended successfully")
