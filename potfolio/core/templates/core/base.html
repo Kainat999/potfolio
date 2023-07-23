@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="" type="" href="" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'core/css/all.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.min.css' %}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    {% block corecss %}
+      <link rel="stylesheet" href="{% static 'core/css/core.css' %}" />
+    {%  endblock corecss %}
+  </head>
+  <body>
+    <div class="container-fluid bg-dark">
+      <div class="row">
+        <div class="col-sm-2">
+           {% include 'core/salidbar.html' %} 
+        </div>
+        <div class="col-sm-10">
+          {% block content %} {% endblock content %}
+          
+        </div>
+      </div>
+    </div>
+
+    <script scr="{% static 'core/js/jquery.js' %}"></script>
+    <script scr="{% static 'core/js/popper.js' %}"></script>
+    <script scr="{% static 'core/js/all.min.js' %}"></script>
+    <script scr="{% static 'core/js/bootstrap.min.js' %}"></script>
+  </body>
+</html>

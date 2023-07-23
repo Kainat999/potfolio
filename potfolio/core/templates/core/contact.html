@@ -1,0 +1,42 @@
+{% extends 'core/base.html' %}
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-warning border-bottom mb-5">CONTACT</h1>
+    <p class="text-white m-5">Do you have any Question?Please do not hasitate to contact. 
+        I will come bace to you within 
+        the a matter of hours to help you.
+    </p>
+    <div class="row">
+        <div class="col-sm-9 mb-5">
+            <form action="">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputName" class="text-white">Your Name</label>
+                        <input type="text" class="form-control" id="inputName">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputName" class="text-white">Your Email</label>
+                        <input type="email" class="form-control" id="inputEmail">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputSubject" class="text-white">Your Subject</label>
+                    <input type="text" class="form-control" id="inputSubject">
+                </div>
+                <div class="mb-3">
+                    <label for="inputTextArea" class="text-white">Your Massege *</label>
+                    <textarea class="form-control" name="" id="inputTextArea" required></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit">Send</button>
+            </form>
+        </div>
+        <div class="col-sm-3 text-center text-white mt-3">
+            <ul class="list-unstyled">
+                <li class="mt-3"><h3 class="text-warning">Address</h3>Narrowal,Lahore,Pakista</li>
+                <li class="mt-3"><h3 class="text-warning">Contect.No</h3>+92 1234567890</li>
+                <li class="mt-3"><h3 class="text-warning">Email Address</h3>contact@email.com</li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock content %}
